@@ -1,0 +1,166 @@
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+  /* --font-family: "Noto Sans", sans-serif; */
+  --bgColor: #F0F0F0;
+  --primaryColor: #FFFFFF;
+  --mainColor: #1EF88F;
+  --optBgColor: #E7E7E7;
+  --optTxtColor: #9E9E9E;
+  --contrastColor: #000711;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url(../public/fonts/PPRightGrotesk-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../public/fonts/Inter-Regular.woff2);
+}
+
+/* Link {
+  text-decoration: none;nm
+  color: black;
+} */
+
+* {
+  /* overflow-x: auto; */
+  box-sizing: border-box;
+}
+
+.Site {
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: var(--backColor);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.Site-content {
+  background-color: var(--bgColor);
+  min-height: 100vh;
+}
+
+.Site-content:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+h1 {
+  font-family: 'PP Right Grotesk' !important;
+  font-style: normal !important;
+  font-weight: light !important;
+  font-size: 48px !important;
+  line-height: 100% !important;
+  font-display: fallback !important;
+}
+
+h2 {
+  font-family: 'PP Right Grotesk' !important;
+  font-style: normal !important;
+  font-weight: light !important;
+  font-size: 48px !important;
+  line-height: 100% !important;
+  font-display: fallback !important;
+}
+
+h3 {
+  font-family: 'Inter' !important;
+  font-weight: normal !important;
+  font-size: 22px !important;
+  line-height: 100% !important;
+  font-display: fallback !important;
+}
+
+p {
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: light !important;
+  font-size: 22px !important;
+  line-height: 110% !important;
+  font-display: fallback !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--mainColor) !important;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+@media screen and (max-device-width:1024px),
+screen and (max-width:1024px) {
+  .container {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  h1 {
+    font-size: 36px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+}
+
+@media screen and (max-device-width:768px),
+screen and (max-width:768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 390px;
+    width: calc(100vw - 32px);
+
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+}

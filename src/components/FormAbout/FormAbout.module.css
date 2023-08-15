@@ -1,0 +1,260 @@
+.infoWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 156px;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding: 48px 36px;
+  background-color: var(--primaryColor);
+  border-radius: 24px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.forwardBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transition: .3s;
+  background-color: var(--optBgColor);
+  color: var(--optTxtColor);
+  height: 100%;
+}
+
+.forwardBlockActive {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+}
+
+.iconArrowRight {
+  height: 24px;
+  width: 24px;
+}
+
+.checkboxWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.formContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 36px;
+  margin-bottom: 72px;
+
+}
+
+.formNavbar{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formContent{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.cvWrapper
+
+.formWrapper {
+  margin-bottom: 36px;
+}
+
+.optHeading h3{
+  color: var(--optTxtColor);
+}
+.optHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.optHeading img {
+  height: 24px;
+  width: 24px;
+}
+
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom:48px;
+}
+.formWrapperItem {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+    font-family: 'Inter' ;
+    font-style: normal ;
+    font-weight: light ;
+    font-size: 16px ;
+    line-height: 100% ;
+    color: var(--optTxtColor);
+}
+
+.formControl::placeholder {
+  color: var(--optTxtColor);
+}
+.formControl {
+  border: none;
+  border-radius: 24px;
+  background-color: var(--optBgColor);
+  padding: 24px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter' ;
+  font-style: normal ;
+    font-weight: light ;
+    font-size: 22px ;
+    line-height: 100% ;
+    color: var(--contrastColor);
+    margin-bottom: 8px;
+    transition: .3s;
+    margin-top: 8px;
+}
+
+.formControl:hover {
+  opacity: 0.8;
+}
+
+.saveButton {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+  border: none;
+  padding: 72px 0px;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  background: var(--optBgColor);
+  border: none;
+  color: var(--contrastColor);
+  font-family: 'Inter' ;
+  font-style: normal ;
+  font-weight: light ;
+  font-size: 22px ;
+  line-height: 110% ;
+  outline: none;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 99999999s 0s, color 99999999s 0s;
+}
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px)   {
+  .infoWrapper {
+    grid-template-rows: 128px;
+  }
+  .forwardText {
+    display: none;
+  }
+  .forwardBlock {
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .formControl {
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .formContainer {
+    margin-bottom: 56px;
+  }
+
+  .saveButton {
+    border-radius: 16px;
+  }
+
+  select {
+    font-size: 18px;
+  }
+
+  .optHeading img {
+    height: 20px;
+    width: 20px;
+  }
+
+
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px)  {
+  .infoWrapper {
+    grid-template-rows: 96px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .forwardText {
+    display: none;
+  }
+  .infoBlock {
+    padding: 24px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 16px;
+  }
+  .forwardBlock {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 16px;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .formControl {
+    font-size: 16px;
+  }
+  .formContainer {
+    margin-bottom: 48px;
+  }
+  .saveButton {
+    padding: 64px;
+  }
+  select {
+    font-size: 16px;
+  }
+
+  .optHeading img {
+    height: 18px;
+    width: 18px;
+
+  }
+}

@@ -1,0 +1,116 @@
+.containerWrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.containerOptions {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 19px;
+}
+
+.rightColumn {
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.infoBlock {
+  width: 735px;
+  height: 180px;
+
+
+  /* box-sizing: border-box; */
+  /* Green */
+
+  background: linear-gradient(90deg, #59AFFF 0%, #fafe14 100%);
+  border-radius: 10px;
+
+}
+
+.cardsOptionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.priceInfo {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  width: 360px;
+  height: 124px;
+  background: #EBEBEB;
+  border-radius: 10px;
+}
+
+.taskInfo {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  width: 360px;
+  height: 166px;
+  background: #EBEBEB;
+  border-radius: 10px;
+}
+
+.forwardBlock {
+  padding: 30px 30px 118px;
+  width: 355px;
+  height: 180px;
+  box-sizing: border-box;
+  /* White */
+
+  border: 1px solid #F3F3F3;
+  border-radius: 10px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 61px;
+  margin-bottom: 60px;
+}
+
+.forwardWrapper {
+  margin-top: 61px;
+  margin-bottom: 60px;
+}
+
+.workersPricePortfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
+  width: 736px;
+  height: 555px;
+  margin-bottom: 100px;
+}
+
+.workersPricePortfolioItem {
+  width: 362px;
+  height: 273px;
+}
+
+.buttonsWrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.hideButton {
+  visibility: hidden;
+}

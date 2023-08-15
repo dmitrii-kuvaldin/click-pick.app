@@ -1,0 +1,61 @@
+.inputBox {
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0px 24px;
+  transition: .3s;
+  cursor: pointer;
+}
+.inputBox h3 {
+  width: 130px;
+  margin-top: 24px;
+}
+
+.inputBox img {
+  height: 96px;
+  width: 96px;
+}
+
+
+.checkboxRound {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.divRound {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #E7E7E7;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.divRound:checked {
+  background-color: #1EF88F;
+}
+
+.paragraph {
+  color: #8A8A8A;
+}
+
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px)   {
+
+.inputBox img {
+  height: 72px;
+  width: 72px;
+}
+}
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .inputBox {
+    border-radius: 16px;
+  }
+}

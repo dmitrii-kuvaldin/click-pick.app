@@ -1,0 +1,79 @@
+.card {
+  border-radius: 10px;
+  background-color: var(--innerColor);
+  padding: 30px;
+  margin-bottom: 20px;
+  grid-column: 1 / 3;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profilePhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.data {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.headerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.slider {
+  margin-bottom: 30px;
+}
+
+.dataTag {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--backColor);
+  color: var(--primaryColor);
+  margin-top: 5px;
+}
+
+.footerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footerData {
+  display: flex;
+  gap: 30px;
+}
+
+.btnShowMore {
+  display: flex;
+  gap: 4px;
+  color: var(--backColor);
+  background-color: var(--primaryColor);
+  align-items: center;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btnShowMore:hover {
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.25);
+}

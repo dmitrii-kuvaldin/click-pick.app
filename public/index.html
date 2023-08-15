@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" type="image/x-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="../src/normalize.css" />
+    <link
+      rel="preload"
+      href="fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin />
+    <link
+      rel="preload"
+      href="fonts/PPRightGrotesk-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin />
+    <link rel="preload" href="../src/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url(fonts/Inter-Regular.woff2);
+      }
+
+      @font-face {
+        font-family: 'PP Right Grotesk';
+        src: url(fonts/PPRightGrotesk-Medium.woff2);
+      }
+
+    </style>
+    <noscript>
+      <link rel="stylesheet" href="../src/index.css">
+    </noscript>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Clickpick — design freelance platform" />
+    <meta property="og:title" content="Clickpick — design freelance platform" />
+    <meta property="og:site_name" content="Clickpick" />
+    <meta property="og:url" content="clickpick.app" />
+    <meta property="og:description" content="Clickpick — design freelance platform include AI tools" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://clickpick.app/api/images/103/1147_ogp.webp" />
+    <title>ClickPick</title>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(92359598, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/92359598" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+      .loaderWrapper {
+        height: 100vh;
+        width: calc(100vw + 16px);
+        position: fixed;
+        top: 0;
+        background-color: #1EF88F;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999999999999;
+        margin-left: -16px;
+      }
+
+
+      .loaderWrapper img {
+        object-fit: cover;
+        height: 128px;
+        position: relative;
+        animation: moveUpDown 1s ease-in-out infinite;
+      }
+
+
+      @keyframes moveUpDown {
+        0% {
+          top: 0;
+        }
+
+        50% {
+          top: 50px;
+        }
+
+        100% {
+          top: 0;
+        }
+      }
+
+      @media screen and (max-device-width:1024px),
+      screen and (max-width:1024px) {
+        .loaderWrapper img {
+          height: 96px;
+        }
+      }
+
+      @media screen and (max-device-width:768px),
+      screen and (max-width:768px) {
+        .loaderWrapper img {
+          height: 64px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="loaderWrapper">
+        <img
+          initial='hidden'
+          whileInView='visible'
+          src="/images/hands_icon/Rock.webp"
+          alt="loader" />
+        <img
+          initial='hidden'
+          whileInView='visible'
+          src="/images/hands_icon/Rock.webp"
+          alt="loader" />
+      </div>
+    </div>
+
+    <!-- <script src="/bundle.js"></script> -->
+  </body>
+  <!-- Yandex.Metrika counter -->
+
+</html>

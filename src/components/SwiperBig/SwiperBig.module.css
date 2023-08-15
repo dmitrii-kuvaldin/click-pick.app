@@ -1,0 +1,105 @@
+#app { height: 100% }
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+
+/* body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+.swiperImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiperSize {
+  margin-top: 8px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 673px;
+  height: 800px;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  mask-image: linear-gradient(to right, black 0%, transparent 100%);
+}
+
+.swiper-wrapper{
+  /* z-index: 0;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  mask-image: linear-gradient(to right, black 0%, transparent 100%); */
+
+}
+
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* .swiper-slide img {
+  display: block;
+  height: 300px;;
+  width: 100%;
+} */
+
+.swiper-button-next {
+  background-image: url(../../../public/Slider-Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  visibility: hidden;
+  right: 150px;
+  z-index: 3;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  transform: scaleX(-1);
+  visibility: hidden;
+
+  background-image: url(../../../public/Slider-Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiperContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 1000px;
+}
+
+
+
+.nextArrow {
+  background-image: url(../../../public/Slider-Arrow.svg);
+  width: 40px;
+  height: 40px;
+}

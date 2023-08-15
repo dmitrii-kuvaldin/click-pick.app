@@ -1,0 +1,155 @@
+.formWrapperItem {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formLabel {
+    font-family: 'Inter' ;
+    font-style: normal ;
+    font-weight: light ;
+    font-size: 16px ;
+    line-height: 100% ;
+    color: var(--optTxtColor);
+}
+
+.formControl::placeholder {
+  color: var(--optTxtColor);
+  font-family: 'Inter' ;
+    font-style: normal ;
+    font-weight: light ;
+    line-height: 100% ;
+    color: var(--optTxtColor);
+}
+.verify {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 24px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  text-align: center;
+  gap: 16px
+}
+
+.textVerify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px
+}
+.verify p {
+  width: 60%;
+  color: var(--optTxtColor);
+}
+
+.verify img {
+  width: 48px;
+  height: 48px;
+}
+.btnWrapper {
+margin-top: 36px;
+  display: flex;
+flex-direction: row;
+gap: 16px;
+}
+.formControl {
+  border: none;
+  border-radius: 24px;
+  background-color: #F0F0F0;
+  padding: 24px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter' ;
+  font-style: normal ;
+    font-size: 22px ;
+    line-height: 100% ;
+    color: var(--contrastColor);
+    margin-bottom: 8px;
+    transition: .3s;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.formControl:hover {
+  opacity: 0.8;
+}
+
+.ic_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  cursor: pointer;
+  text-align: center;
+
+  border-radius: 16px;
+  border: none;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+}
+.ic_btn_black {
+  background-color: var(--contrastColor);
+  color: var(--primaryColor)
+}
+
+.ic_btn_green {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+}
+
+.ic_btn_grey {
+  background-color: var(--optBgColor);
+  color: var(--OptTxtColor)
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+  .ic_btn {
+    font-size: 18px;
+  }
+  .formControl {
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .formWrapperItem {
+    margin-bottom: 16px;
+  }
+
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .verify h1 {
+    width: 60%;
+  }
+  .verify p {
+    width: 70%;
+    color: var(--optTxtColor);
+  }
+
+  .verify img {
+    width: 36px;
+    height: 36px;
+  }
+  .btnWrapper {
+    flex-direction: column;
+  }
+
+}
+

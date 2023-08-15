@@ -1,0 +1,142 @@
+.swiperMain {
+  position: relative;
+}
+
+.swiperImg {
+  max-height: 80%;
+  display: block;
+  max-width: 80%;
+  object-fit:contain;
+  border-radius: 16px !important
+}
+.imgWrapper {
+  height: 480px;
+  border-radius: 16px;
+  background-color: var(--optBgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide {
+  position: relative !important;
+}
+
+.swiperContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.nextArrow{
+  background-image: url(../../../public/images/icons_svg/Next.svg);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 8px;
+  top: 45%;
+  z-index: 999;
+}
+
+.prevArrow{
+  background-image: url(../../../public/images/icons_svg/Prev.svg);
+  background-size: cover;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 8px;
+  top: 45%;
+  z-index: 999;
+}
+.arrowWrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.loaderWrapper {
+  top:0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--mainColor);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* opacity: .5; */
+  text-align: center;
+  gap: 48px
+}
+
+
+.loaderWrapper img {
+  object-fit: cover;
+  height: 128px;
+}
+
+
+.deleteBtn {
+position: absolute;
+border-radius: 24px;
+box-shadow: none;
+bottom: 12px;
+left: 12px;
+width: 36px;
+height: 36px;
+background-color: none;
+border: 0;
+margin: 0;
+padding: 0;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 999;
+}
+
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+  .imgWrapper {
+    height: 360px;
+  }
+  .loaderWrapper img {
+    height: 96px;
+  }
+
+  .nextArrow{
+    width: 40px;
+    height: 40px;
+  }
+
+  .prevArrow{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px)  {
+  .imgWrapper {
+    height: 300px;
+  }
+    /* .loaderWrapper {
+    width: 358px;
+    height: 300px;
+    top: 355px;
+  } */
+  .nextArrow{
+    width: 36px;
+    height: 36px;
+  }
+  .loaderWrapper img {
+    height: 64px;
+  }
+
+  .prevArrow{
+    width: 36px;
+    height: 36px;
+  }
+}

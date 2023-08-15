@@ -1,0 +1,15 @@
+.customSlider {
+  /* max width of your slider */
+  max-width: 300px;
+  /* Optional: Only If you want to center your slider in the page */
+  margin: auto;
+}
+
+.customSliderTrack {
+  /* Top value to align your track to the center of your thumb */
+  top: 8px;
+  /* thickness of the track */
+  height: 4px;
+ /* default color of your track */
+  background: var(--track-color);
+}

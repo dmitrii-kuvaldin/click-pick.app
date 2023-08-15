@@ -1,0 +1,54 @@
+.wrapper {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.wrapper a {
+  color: var(--optTxtColor);
+}
+.wrapper a:visited {
+  color: var(--optTxtColor);
+}
+
+.wrapper p {
+  color: var(--optTxtColor);
+}
+
+.number {
+  height: 512px;
+}
+
+.like {
+  width: 220px;
+  position: absolute;
+  transform: rotate(160deg);
+  top: 130px;
+  right: 140px;
+
+}
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+.like {
+  top: 130px;
+  right: 140px;
+}
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+.number {
+  height: 372px;
+}
+
+.like {
+width: 150px;
+top: 310px;
+right: 140px;
+}
+}

@@ -1,0 +1,663 @@
+.infoWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 156px;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding: 48px 36px;
+  background-color: var(--primaryColor);
+  border-radius: 24px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.forwardBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-radius: 24px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transition: .3s;
+  background-color: var(--optBgColor);
+  color: var(--optTxtColor);
+  height: 100%;
+}
+
+.forwardBlockActive {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+}
+
+.iconArrowRight {
+  height: 24px;
+  width: 24px;
+}
+
+
+.portfolioContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 48px;
+  margin-bottom: 96px;
+}
+
+.SpecNavbar{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.SpecContent {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+
+
+.navStep {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+  border-radius: 24px;
+  padding: 16px;
+  border: none;
+	outline: inherit;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  text-align: left;
+
+  cursor: pointer;
+  transition: .5s;
+}
+
+.navStep p{
+  width: 70%;
+}
+
+.navStepFade p {
+  width: 70%;
+}
+
+.navStep img {
+  height: 48px;
+  width: 48px;
+}
+.navStepFade img {
+  height: 48px;
+  width: 48px;
+}
+
+
+.navStepFade {
+  background-color: var(--optBgColor);
+  color: var(--optTxtColor);
+  border-radius: 24px;
+  padding: 16px;
+  border: none;
+	outline: inherit;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+
+  cursor: pointer;
+  text-align: left;
+  transition: .5s;
+}
+
+.navStepFade:active {
+  background-color: white;
+}
+
+
+
+.portfolioWrapper {
+  margin-bottom: 48px;
+}
+
+
+.optHeading h3{
+  color: var(--optTxtColor);
+}
+.optHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.iconOptHeading {
+  width: 24px;
+  height: 24px;
+}
+
+.uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryColor);
+  margin-bottom: 36px;
+  border-radius: 24px;
+  gap: 16px;
+  padding: 48px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.uploader:hover {
+  background-color: var(--mainColor);
+}
+
+.iconUploader {
+  width: 48px;
+  height: 48px;
+}
+
+.timeWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.timeContent {
+  padding: 36px 24px;
+  min-width: 300px;
+  border-radius: 24px;
+  background-color: var(--primaryColor);
+}
+
+.timeContent h3 {
+  color: var(--contrastColor);
+  margin-bottom: 12px;
+  margin-left: 18px;
+}
+
+.timeContent p {
+  color: var(--optTxtColor);
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+
+
+.checkboxWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.checkboxStep{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 8px;
+  border-radius: 40px;
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition:.3s;
+
+  font-family: 'Inter' ;
+  font-style: normal;
+  font-weight: light;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.checkboxStepFade:hover {
+  color: var(--contrastColor);
+}
+
+.checkboxStepFade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 8px;
+  border-radius: 40px;
+
+  background-color: var(--optBgColor);
+  color: var(--optTxtColor);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition:.3s;
+
+  font-family: 'Inter' ;
+  font-style: normal;
+  font-weight: light;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.saveButton {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+  border: none;
+  padding: 72px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.ic_btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 24px;
+  gap: 10px;
+
+  border-radius: 16px;
+  border: none;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: var(--contrastColor)
+}
+
+
+.btnWrapper {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.sliderDiv {
+  margin-top: 24px;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.inputSlider {
+  width: 100%;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 16px;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #E7E7E7;
+  border-radius: 5px;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  padding-top: 18px;
+  padding-left: 18px;
+  border: 14px solid #FFFFFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 50px;
+  background: #1EF88F;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -18px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #E7E7E7;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #E7E7E7;
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  padding-top: 18px;
+  padding-left: 18px;
+  border: 14px solid #FFFFFF;
+  height: 14px;
+  width: 14px;
+  border-radius: 50px;
+  background: #1EF88F;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #E7E7E7;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #E7E7E7;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  padding-top: 18px;
+  padding-left: 18px;
+  border: 14px solid #FFFFFF;
+  height: 32px;
+  width: 32px;
+  border-radius: 50px;
+  background: #1EF88F;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #E7E7E7;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #E7E7E7;
+}
+
+
+.loaderWrapper {
+  top:366px;
+  z-index: 3;
+  width: 667px;
+  height: 480px;
+  position: absolute;
+  background-color: var(--mainColor);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* opacity: .5; */
+  text-align: center;
+  gap: 48px
+}
+
+
+.loaderWrapper img {
+  object-fit: cover;
+  height: 128px;
+}
+
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .loaderWrapper img {
+    height: 64px;
+  }
+}
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px)   {
+  .loaderWrapper img {
+    height: 96px;
+  }
+  .loaderWrapper {
+    width: 564px;
+    height: 360px;
+    top: 338px;
+  }
+
+  .infoWrapper {
+    grid-template-rows: 128px;
+  }
+  .forwardText {
+    display: none;
+  }
+  .forwardBlock {
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  .portfolioContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navStep {
+    gap: 8px;
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .navStepFade {
+    gap: 8px;
+    border-radius: 16px;
+    padding: 10px;
+  }
+  .checkboxWrapper {
+    gap: 12px;
+  }
+
+  .navStepFade p {
+    font-size: 16px !important;
+  }
+  .navStep p {
+    font-size: 16px !important;
+  }
+
+.ic_btn {
+  font-size: 18px;
+}
+
+  .navStep img {
+    height: 28px;
+    width: 28px;
+  }
+  .navStepFade img {
+    height: 28px;
+    width: 28px;
+  }
+  .SpecNavbar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .SpecContent {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  .cardsOptionWrapper {
+    grid-template-rows: repeat(2, 208px);
+  }
+
+  .uploader {
+    border-radius: 16px;
+  }
+
+  .checkboxStepFade {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+  .checkboxStep {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+  .timeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 16px;
+  }
+
+  .timeContent {
+    padding: 24px 36px;
+    min-width: auto;
+    width: 100%;
+    border-radius: 24px;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between
+  }
+
+  .timeContent h3 {
+    color: var(--contrastColor);
+    margin: 0;
+  }
+
+  .timeContent p {
+    color: var(--optTxtColor);
+    white-space: nowrap;
+    margin-bottom: 4px;
+  }
+
+  .saveButton {
+    border-radius: 16px;
+  }
+
+}
+@media screen and (max-device-width:768px), screen and (max-width:768px)  {
+  .loaderWrapper img {
+    height: 64px;
+  }
+  .loaderWrapper {
+  width: 358px;
+  height: 300px;
+  top: 355px;
+}
+  input[type=range]::-moz-range-thumb {
+    height: 24px;
+    width: 24px;
+  }
+  input[type=range]::-ms-thumb  {
+    height: 24px;
+    width: 24px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    height: 24px;
+    width: 24px;
+  }
+
+  .infoWrapper {
+    grid-template-rows: 96px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .forwardText {
+    display: none;
+  }
+  .cardsOptionWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 180px);
+    grid-gap: 16px;
+    margin-bottom: 128px;
+    position: relative;
+  }
+  .infoBlock {
+    padding: 24px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 16px;
+  }
+  .forwardBlock {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 16px;
+  }
+  .iconOptHeading {
+    width: 16px;
+    height: 16px;
+  }
+  .checkboxStepFade {
+    font-size: 16px;
+  }
+  .checkboxStep {
+    font-size: 16px;
+  }
+
+  .portfolioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SpecNavbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: auto;
+    z-index: 999;
+  }
+  .navStep, .navStepFade {
+    min-width: 220px;
+  }
+  .timeContent {
+    border-radius: 16px;
+  }
+  .timeContent h3 {
+    width: 30%;
+  }
+
+  .saveButton {
+    padding: 64px;
+  }
+  .ic_btn {
+    font-size: 16px;
+  }
+}
+
+

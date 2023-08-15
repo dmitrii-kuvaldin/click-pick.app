@@ -1,0 +1,69 @@
+/* input[type='checkbox'] {
+  height: 45px;
+  width: 45px;
+  color-scheme: light;
+  margin-right: 10px;
+  border-radius: 10px;
+} */
+
+.checkboxRound {
+  height: 45px;
+  width: 45px;
+  background-color: #232323;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxRound:checked {
+  background-color: gray;
+}
+
+.light {
+  color-scheme: light;
+  accent-color: #232323;
+}
+
+.container {
+  height: 300px;
+  width: 357px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  color: aliceblue;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 32px;
+  margin-bottom: 15px;
+
+}
+.paragraphBox {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 96px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paragraph {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #8A8A8A;
+}
+
+.inputLabel {
+  color: #8A8A8A;
+  font-size: 20px;
+}

@@ -1,0 +1,244 @@
+.allForm {
+  margin-top: 102px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #0E0E0E;
+  min-width: 735px;
+  /* border:  1px solid #353535; */
+  border-radius: 5px;
+  justify-content: flex-start;
+  min-height: 800px;
+}
+
+.containerProfile {
+  height: 80px;
+  width: 263px;
+  background-color: #232323;
+  margin-bottom: 30px;
+}
+
+.containerControlOnline {
+  width: 263px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 158px;
+}
+
+.containerControlOnline_Button {
+  width:130px;
+  background-color: #232323;
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8A8A8A;
+  border:none;
+}
+
+.button_active {
+  background: linear-gradient(90deg, #65FA1F 0%, #8FFFC9 100%);
+  color: #0E0E0E;
+}
+
+.button_deactive {
+  background: #232323;
+  color: #8A8A8A;
+}
+
+.button_notOnline {
+  background: linear-gradient(90deg, #F10D0D 0%, #FD5D5D 100%);
+  color: white;
+}
+
+.controls {
+  margin-bottom: 40px;
+}
+
+.formLabel {
+  color: white;
+  /* margin-top: 60px; */
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* .formLabel:first-child {
+  margin-top: 0px;
+} */
+
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.formControl {
+  resize: none;
+  margin-bottom: 10px;
+  border:  2px solid #353535;
+  background-color:#232323;
+  border-radius: 10px;
+  width: 400px;
+  height: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.formControl::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1; /* Firefox */
+  font-size: 20px;
+  /* line-height: 60px; */
+  font-family: "Noto Sans", sans-serif;
+  transform: translateY(-5px);
+}
+
+.formControl::selection {
+  color: black;
+  background: white;
+}
+
+.formControl:focus {
+  outline-color: white;
+}
+
+.buttonForward {
+  margin-top: 60px;
+  width: 618px;
+  height: 180px;
+  background-color: black;
+  border:  2px solid white;
+  padding: 30px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  border-radius: 10px;
+
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navStepFade {
+  width: 220px;
+  height: 24px;
+  color: grey;
+  background-color: #0E0E0E;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+	outline: inherit;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: left;
+}
+
+.navStepFade:active {
+  background-color: white;
+
+}
+
+.activeButton {
+  background: linear-gradient(90deg, #65FA1F 0%, #8FFFC9 100%);
+}
+
+.navStep {
+  width: 220px;
+  height: 24px;
+  background-color: #0E0E0E;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  padding-left: 10px;
+  border: none;
+  cursor: pointer;
+	outline: inherit;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 100%;
+  text-align: left;
+}
+
+.fromServer {
+  color: white;
+}
+
+
+/* .navStep2 {
+  width: 358px;
+  height: 133px;
+  background-color: blue;
+}
+.navStep3 {
+  width: 358px;
+  height: 133px;
+  background-color: rgb(0, 255, 76);
+} */
+
+.testForm{
+  margin: 0px 30px;
+  width: 760px;
+
+}
+
+.firstSection {
+  display: block;
+}
+
+.secondSection {
+  display: none;
+}
+
+.buttonHide {
+  display: none;
+}
+
+.buttonShow {
+  display: block;
+}
+
+
+/* input {
+  overflowWrap: "break-word"
+} */
+
+.cardsOptionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hideButton {
+  visibility: hidden;
+}
+
+.containerMain {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,30 @@
+.loaderWrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999999999;
+  margin: 0 auto;
+}
+
+.loaderWrapper img {
+  object-fit: cover;
+  height: 128px;
+}
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+  .loaderWrapper img {
+    height: 96px;
+  }
+}
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .loaderWrapper img {
+    height: 64px;
+  }
+}

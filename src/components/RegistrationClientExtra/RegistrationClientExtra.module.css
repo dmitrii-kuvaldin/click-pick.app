@@ -1,0 +1,44 @@
+.containerOptions {
+  width: 1113px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoBlock {
+  width: 735px;
+  height: 180px;
+  left: 200px;
+  top: 161px;
+
+  box-sizing: border-box;
+  /* Green */
+
+  background: linear-gradient(90deg, #11998E 0%, #ef7e38 100%);
+  border-radius: 10px;
+  margin-right: 19px;
+}
+
+.cardsOptionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.forwardBlock {
+  padding: 30px 30px 118px;
+  width: 355px;
+  height: 180px;
+  box-sizing: border-box;
+  /* White */
+
+  border: 1px solid #F3F3F3;
+  border-radius: 10px;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 61px;
+  margin-bottom: 60px;
+}

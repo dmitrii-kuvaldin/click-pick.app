@@ -1,0 +1,203 @@
+.container {
+  position: relative;
+  min-height: 70vh;
+}
+
+.formWrapperItem {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formLabel {
+    font-family: 'Inter' ;
+    font-style: normal ;
+    font-weight: light ;
+    font-size: 16px ;
+    line-height: 100% ;
+    color: var(--optTxtColor);
+}
+
+.formControl::placeholder {
+  color: var(--optTxtColor);
+  font-family: 'Inter' ;
+    font-style: normal ;
+    font-weight: light ;
+    font-size: 22px ;
+    line-height: 100% ;
+    color: var(--optTxtColor);
+}
+.formControl {
+  border: none;
+  border-radius: 24px;
+  background-color: var(--optBgColor);
+  padding: 24px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter' ;
+  font-style: normal ;
+    font-size: 22px ;
+    line-height: 100% ;
+    color: var(--contrastColor);
+    margin-bottom: 8px;
+    transition: .3s;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.formControl:hover {
+  opacity: 0.8;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 48px 36px;
+  background-color: var(--primaryColor);
+  border-radius: 24px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 48px;
+}
+
+.actionWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.forgotPass {
+  font-family: 'Inter' ;
+  font-style: normal ;
+  color: var(--optTxtColor);
+  transition: .3s;
+}
+.forgotPass:hover {
+  color: var(--contrastColor);
+
+}
+
+.handIcon {
+  width: 296px;
+  position: absolute;
+  top: 100px;
+    right: -10px;
+    transform: rotate(-15deg);
+    z-index: 9999;
+}
+
+.ic_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  cursor: pointer;
+text-decoration: none;
+  border-radius: 16px;
+  border: none;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+}
+.ic_btn_black {
+  background-color: var(--contrastColor);
+  color: var(--primaryColor)
+}
+
+.ic_btn_green {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+}
+
+.ic_btn_grey {
+  background-color: var(--optBgColor);
+  color: var(--optTxtColor)
+}
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
+  .handIcon {
+    width: 200px;
+  }
+  .infoWrapper {
+    grid-template-rows: 128px;
+  }
+  .forwardText {
+    display: none;
+  }
+  .forwardBlock {
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .formControl {
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .formContainer {
+    margin-bottom: 56px;
+  }
+  .ic_btn {
+    font-size:18px;
+  }
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .handIcon {
+    width: 120px;
+    top: 140px;
+  }
+  .infoWrapper {
+    grid-template-rows: 96px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .forwardText {
+    display: none;
+  }
+  .infoBlock {
+    padding: 24px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 16px;
+  }
+  .forwardBlock {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 16px;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .formControl {
+    font-size: 16px;
+  }
+  .formContainer {
+    margin-bottom: 48px;
+  }
+  .saveButton {
+    padding: 64px;
+  }
+
+  .ic_btn {
+    font-size:16px;
+    border-radius: 16px;
+  }
+}

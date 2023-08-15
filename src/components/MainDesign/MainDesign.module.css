@@ -1,0 +1,686 @@
+.mc_content_block {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  padding: 48px 36px;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 64px;
+}
+.mc_content_white {
+  background-color: var(--primaryColor);
+  color: var(--contrastColor) !important;
+}
+
+.mc_content_green_l {
+  background-color: var(--mainColor);
+  color: var(--contrastColor) !important;
+  min-height: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.mc_content_white_l{
+  min-height: 0 !important;
+  background-color: var(--primaryColor);
+  color: var(--contrastColor) !important;
+}
+
+.mc_content_green_l .mc_text_block h1  {
+  margin-bottom: 0;
+}
+
+.mc_content_black {
+  background-color: var(--contrastColor);
+  color: var(--primaryColor) !important;
+}
+.mc_wrapper {
+  width: 42%;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+
+.mc_text_block {
+  width: 100%;
+}
+
+.mc_p_block_short {
+  width: 93%;
+}
+
+.mc_text_block h1, .mc_text_block h2  {
+  margin-bottom: 24px;
+}
+
+.mc_p_block p {
+  margin-bottom: 12px;
+}
+
+.mc_image img {
+  object-fit: cover;
+}
+
+.mc_content_green_l .mc_text_block h2 {
+  margin: 0;
+}
+
+.img_ai {
+width: 610px;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+
+}
+
+.img_ai_1 {
+  top: 120px;
+  right: 300px;
+}
+
+.img_ai_2 {
+  top: 220px;
+  right: 120px;
+}
+
+.img_ai_3 {
+  top: 320px;
+  right: 240px;
+}
+
+.img_ai_4 {
+  top: 420px;
+  right: 60px;
+}
+
+.img_ai_txt {
+height: 160px;
+position: absolute;
+
+}
+
+.img_review {
+  width: 500px;
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+}
+
+.img_iphone {
+  width: 390px;
+  position: absolute;
+  right: 70px;
+  bottom: 0;
+}
+
+.img_iphone_m {
+  display: none;
+}
+
+.img_chat {
+  width: 455px;
+}
+
+
+.img_chat_m {
+  display: none;
+}
+
+.divMac {
+display: none;
+}
+
+.img_mac {
+  position: absolute;
+  width: 605px;
+  right: 0;
+  bottom: 140px;
+}
+
+.img_mac_m {
+  display: none;
+}
+
+.img_number {
+  width: 466px;
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+
+.img_number_m {
+  display: none;
+}
+
+
+.hand {
+  width: 220px;
+  position: absolute;
+  z-index: 99999;
+}
+
+.fuck1 {
+  top: 230px;
+  right: 210px;
+  transform: rotate(-32deg);
+}
+
+.like1 {
+  top: 330px;
+  right: 400px;
+  transform: rotate(-30deg);
+}
+
+.rock1 {
+  bottom: -60px;
+  right: 60px;
+  transform: rotate(30deg);
+
+}
+.rock2 {
+  bottom: -120px;
+    right: 210px;
+    transform: rotate(30deg);
+
+}
+.rock3 {
+  top: 50px;
+  right: -10px;
+    transform: rotate(30deg);
+
+}
+
+.pointer1 {
+  top: 200px;
+  right: -50px;
+  transform: rotate(-45deg);
+}
+
+.pointer2 {
+  bottom: -187px;
+  right: 32px;
+  transform: rotate(35deg);
+}
+
+.pointer3 {
+  bottom: -47px;
+  right: 298px;
+  transform: rotate(26deg);
+}
+
+.pointer4 {
+  bottom: 40px;
+    right: -28px;
+    transform: rotate(-35deg);
+}
+
+.pointer5 {
+  bottom: -210px;
+  left: 22px;
+    transform: rotate(35deg);
+}
+
+
+.pointer6 {
+  bottom: 20px;
+  left: 512px;
+    transform: rotate(35deg);
+}
+
+.victory1 {
+  position: absolute;
+  width: 180px;
+  top: 240px;
+  right: 200px;
+}
+
+.ok1 {
+  position: absolute;
+  width: 180px;
+  top: 100px;
+  right: -80px;
+  transform: rotate(-35deg);
+}
+
+/* Interface Components */
+a {
+  text-decoration: none;
+}
+.ic_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 16px;
+  border: none;
+cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+}
+.ic_btn_black {
+  background-color: var(--contrastColor);
+  color: var(--primaryColor)
+}
+
+.ic_btn_green {
+  background-color: var(--mainColor);
+  color: var(--contrastColor);
+}
+
+.ic_btn_grey {
+  background-color: var(--optBgColor);
+  color: var(--OptTxtColor)
+}
+
+.ghostDiv {
+  top: 670px;
+  z-index: 10;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+@media screen and (max-device-width:1024px), screen and (max-width:1024px)  {
+  .mc_content_block {
+    border-radius: 24px;
+    padding: 36px 36px;
+    min-height: 500px;
+    margin-bottom: 48px;
+  }
+  .mc_wrapper {
+    height: 500px;
+  }
+
+  .ic_btn {
+    font-size: 18px;
+  }
+
+  .hand {
+    width: 160px;
+  }
+  .img_ai {
+    width: 460px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    }
+
+    .img_ai_1 {
+      top: 120px;
+      right: 200px;
+    }
+
+    .img_ai_2 {
+      top: 200px;
+      right: 50px;
+    }
+
+    .img_ai_3 {
+      top: 280px;
+      right: 180px;
+    }
+
+    .img_ai_4 {
+      top: 360px;
+      right: 80px;
+    }
+
+
+    .img_ai_txt {
+    height: 120px;
+    position: absolute;
+
+    }
+
+  .img_review {
+    width: 380px;
+    bottom: 60px;
+    right: 30px;
+  }
+
+  .img_chat {
+    width: 345px;
+  }
+  .img_chat_m {
+    display: none;
+  }
+
+  .img_iphone {
+    width: 304px;
+    right: 71px;
+    bottom: 0;
+  }
+
+  .img_iphone_m {
+    display: none;
+  }
+
+  .divMac {
+    display: none;
+    }
+
+  .img_mac {
+    width: 430px;
+    right: 0;
+    bottom: 130px;
+  }
+
+  .img_mac_m {
+    display: none;
+  }
+
+  .img_number {
+    width: 346px;
+    top: 50px;
+    right: 50px;
+  }
+  .img_number_m {
+    display: none;
+  }
+
+  .pointer1 {
+    top: 180px;
+    right: 10px;
+    transform: rotate(-35deg);
+  }
+  .pointer2 {
+    bottom: -134px;
+    right: 32px;
+    transform: rotate(25deg);
+  }
+  .pointer3 {
+    bottom: -11px;
+    right: 236px;
+    transform: rotate(26deg);
+  }
+  .pointer4 {
+    bottom: 130px;
+    right: 12px;
+    transform: rotate(-35deg);
+  }
+  .pointer5 {
+    bottom: -130px;
+    left: 22px;
+      transform: rotate(35deg);
+  }
+  .pointer6 {
+    bottom: -10px;
+    left: 352px;
+      transform: rotate(35deg);
+  }
+  .like1 {
+    top: 308px;
+    right: 300px;
+    transform: rotate(-30deg);
+  }
+  .rock1 {
+    bottom: -60px;
+    right: 100px;
+    transform: rotate(30deg);
+  }
+  .rock2 {
+    bottom: -70px;
+    right: 90px;
+    transform: rotate(30deg);
+  }
+  .fuck1 {
+    top: 210px;
+    right: 150px;
+    transform: rotate(-25deg);
+  }
+  .victory1 {
+    position: absolute;
+    width: 140px;
+    top: 210px;
+    right: 138px;
+}
+
+.ok1 {
+  position: absolute;
+  width: 140px;
+  top: 0px;
+  right: 0px;
+  transform: rotate(-35deg);
+}
+
+}
+
+@media screen and (max-device-width:768px), screen and (max-width:768px) {
+  .mc_wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .mc_text_block {
+    margin-bottom: 24px;
+  }
+  .mc_text_block h2 {
+    margin-bottom: 12px;
+  }
+  .mc_content_block {
+    min-height: auto;
+    flex-direction: column-reverse;
+    border-radius: 16px;
+    padding: 36px 24px;
+  }
+  .mc_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mc_content_iphone {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .mc_content_white_l .mc_text_block{
+    margin-bottom: 0;
+  }
+  .mc_content_green_l .mc_text_block{
+    margin-bottom: 0;
+  }
+  .img_number_m, .img_mac_m, .img_chat_m, .img_iphone_m, .img_review {
+    position: relative;
+    display: block;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+
+  }
+  .img_iphone_m {
+    width: 80%;
+    margin-top: 24px
+  }
+  .img_iphone {
+    display: none;
+  }
+
+  .img_chat {
+    display: none;
+  }
+
+  .img_chat_m {
+    margin-bottom: 24px;
+  }
+  .img_mac{
+    display: none;
+  }
+
+  .mc_content_mac {
+    height: 730px;
+  }
+  .divMac {
+    display: flex;
+    height: 320px;
+    margin-bottom: 36px;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    }
+
+  .img_mac_m{
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .img_number_m {
+    margin-bottom: 24px;
+  }
+
+  .img_number {
+    display: none;
+  }
+
+  .img_ai {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 24px;
+    }
+    .img_ai_txt {
+      height: 100px;
+      position: absolute;
+
+      }
+
+    .img_ai_1 {
+      top: 60px;
+      right: 140px;
+    }
+
+    .img_ai_2 {
+      top: 125px;
+      right: 40px;
+    }
+
+    .img_ai_3 {
+      top: 185px;
+      right: 130px;
+    }
+
+    .img_ai_4 {
+      top: 255px;
+      right: 50px;
+    }
+
+  .hand {
+    width: 110px;
+  }
+
+  .pointer1 {
+    top: 520px;
+    right: 10px;
+    transform: rotate(-35deg);
+  }
+  .pointer2 {
+    bottom: 275px;
+    right: 70px;
+    transform: rotate(-19deg);
+  }
+  .pointer3 {
+    bottom: 338px;
+    right: 62px;
+    transform: rotate(-36deg);
+  }
+  .pointer4 {
+    bottom: 190px;
+    right: 0px;
+    transform: rotate(-15deg);
+  }
+
+  .pointer5 {
+    bottom: -80px;
+    left: 22px;
+      transform: rotate(35deg);
+  }
+
+  .pointer6 {
+    top: 290px;
+    left: 222px;
+      transform: rotate(35deg);
+  }
+
+  .like1 {
+    top: 620px;
+    left: 0px;
+    right: 0;
+    transform: rotate(-30deg);
+  }
+  .rock1 {
+    bottom: -40px;
+    right: 100px;
+    transform: rotate(30deg);
+  }
+  .rock2 {
+    bottom: 60px;
+    right: 10px;
+    transform: rotate(30deg);
+  }
+  .rock3 {
+    top: 60px;
+    right: 270px;
+    transform: rotate(30deg);
+  }
+  .fuck1 {
+    top: 100px;
+    right: 25%;
+    left: 25%;
+    bottom: 0;
+    transform: rotate(-35deg);
+    width: 130px;
+  }
+  .victory1 {
+    position: absolute;
+    width: 130px;
+    top: 110px;
+    right: 30%;
+    left: 30%;
+
+}
+
+.ghostDiv {
+  top: 770px;
+  z-index: 10;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+.ok1 {
+  position: absolute;
+  width: 85px;
+  top: 10px;
+  right: -6px;
+  transform: rotate(-35deg);
+}
+
+  .img_review {
+    margin-bottom: 24px;
+  }
+}

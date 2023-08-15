@@ -1,0 +1,50 @@
+.profileContainer {
+  background-color: #232323;
+  width: 735px;
+  height: 506px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.profileContainer_column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.inputButton {
+  color: white;
+  padding: 5px;
+}
+
+.sliderDiv{
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputSlider {
+  accent-color: #0039c8;
+  /* color-scheme: light; */
+  border-color: chocolate;
+}
+
+.navStep {
+  background-color: #1EF88F;
+}
+
+.navStepFade {
+  background-color: grey;
+}
