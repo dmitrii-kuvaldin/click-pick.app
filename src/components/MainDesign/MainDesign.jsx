@@ -525,7 +525,7 @@ export default function MainDesign() {
               >
                 <h2>Звёзды&nbsp;и&nbsp;отзывы&nbsp;— <br /> это прошлое</h2>
                 <div className={classes.mc_p_block}>
-                  <p>Сейчас количество отзывов важнее качества работ в&nbsp;портфолио.</p><p>Это несправедливо, но&nbsp;вместе мы&nbsp;можем это изменить!</p>
+                  <p>Сейчас количество отзывов важнее качества работ в&nbsp;портфолио.</p><p>Это несправедливо, но&nbsp;вместе мы&nbsp;можем это изменить</p>
                 </div>
               </motion.div>
               <button onClick={() => { setSystem(!system); scrollTo() }} href="#2" className={`${classes.ic_btn} ${classes.ic_btn_green}`}>
